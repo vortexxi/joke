@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Online joke generator app. Thanks to: icanhazdadjoke.com">
+  	<meta name="keywords" content="HTML, CSS, JavaScript, joker, app, webapp, joke, generator, API">
+  	<meta name="author" content="Vortex">
+  	<link rel="icon" href="img/laugh-favicon.ico" sizes="16x16">
+	<title>JOKER APP</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!--FROM https://icanhazdadjoke.com/api, https://www.youtube.com/watch?v=UDIfuvLEkjU-->
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="jDiv">
+				<p class="jokeP">Click the button to get a joke!</p>
+			</div>
+			<div class="bDiv">
+				<button class="jokeButton">Joke</button>
+			</div>		
+		</div>
+	</section>
+	<div class="wrapper">
+		<div id="scene" class="parallaxScene">
+			<div data-depth="0.1">
+				<img src="img/stageP.jpg" alt="stage-image-joke-app">
+			</div>
+			<div  data-depth="0.5">
+				<img src="img/microP.png" alt="vintage-microphone-image-joke-app">
+			</div>
+			<div  data-depth="0.0">
+				<img src="img/telonP.png" alt="stage-image-joke-app">
+			</div>
+			<div  data-depth="0.4">
+				<img src="img/laugh1-P.png" alt="laughing-mouths-image-joke-app">
+			</div>
+			<div  data-depth="0.2">
+				<img src="img/laugh2-P.png" alt="laughing-mouths-image-joke-app">
+			</div>
+		</div>
+	</div>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+	var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene);
+
+</script>	
+</body>
+</html>
